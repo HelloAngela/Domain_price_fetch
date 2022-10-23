@@ -4,6 +4,7 @@ import json
 import requests  # request library: http://docs.python-requests.org/en/master/
 import re, string, timeit
 import time
+from os.path import abspath
 
 # Search parameters, property ID available from end of domain URL eg.
 # https://www.domain.com.au/132a-prince-edward-avenue-earlwood-nsw-2206-2014925785
@@ -11,7 +12,7 @@ import time
 # Increment values
 
 property_id = "2018145822"
-starting_max_price = 1500000
+starting_max_price = 3400000
 increment = 100000
 # when starting min price is zero we'll just use the lower bound plus 400k later on
 starting_min_price = 0
@@ -164,13 +165,28 @@ else:
 
 # Print results
 
-print(da['displayAddress'])
-print(r['headline'])
-print("Property Type:", property_type_str)
-print("Details: ", int(bedrooms), "bedroom,", int(bathrooms), "bathroom,", int(carspaces), "carspace")
-print("Display price:", r['priceDetails']['displayPrice'])
-if max_price == min_price:
-    print("Price guide:", "$", lower, denom)
-else:
-    print("Price range:", "$", lower, "-", "$", upper, denom)
-print("URL:", r['seoUrl'])
+# print(da['displayAddress'])
+# print(r['headline'])
+# print("Property Type:", property_type_str)
+# print("Details: ", int(bedrooms), "bedroom,", int(bathrooms), "bathroom,", int(carspaces), "carspace")
+# print("Display price:", r['priceDetails']['displayPrice'])
+# if max_price == min_price:
+#     print("Price guide:", "$", lower, denom)
+# else:
+#     print("Price range:", "$", lower, "-", "$", upper, denom)
+# print("URL:", r['seoUrl'])
+
+# Output results to txt
+
+with open("C:\\Users\\hello\\Dropbox\\Python\\price_2111.txt", 'a') as f:
+    f1 = da['displayAddress']
+    f2 = '\n' + r['headline']
+    f3 = '\n' +"Property Type:" + property_type_str
+    f4 = '\n' +"Details: " + str(int(bedrooms)) + " bedroom," + str(int(bathrooms)) + " bathroom," + str(int(carspaces)) + " carspace"
+    f5 = '\n' +"Display price:" + r['priceDetails']['displayPrice']
+    if max_price == min_price:
+         f6 = '\n' + "Price guide:"+ "$"+ str(lower)+ denom
+    else:
+         f6 = '\n' + "Price range:"+ "$"+ str(lower)+ "-"+ "$"+ str(upper)+ denom
+    f7 = '\n' + "URL:" + r['seoUrl']
+    f.writelines([f1, f2, f3, f4, f5, f6, f7])
