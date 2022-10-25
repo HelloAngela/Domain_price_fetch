@@ -29,12 +29,12 @@ app = dash.Dash(__name__)
 
 # load geojson into the app
 
-with open("C:\\Users\\hello\\Dropbox\\Python\\property_map.json") as data:
-    geo = json.load(data)
+# with open("C:\\Users\\hello\\Dropbox\\Python\\property_map.json") as data:
+#     geo = json.load(data)
 
 # Putting the map in our app layout
 app.layout = dl.Map(
-   [dl.TileLayer(), dl.GeoJSON(data='',
+   [dl.TileLayer(), dl.GeoJSON(data="C:\\Users\\hello\\Dropbox\\Python\\property_map.json",
                                id="geojson",
                                zoomToBounds=True)],
    style={"width": "1000px", "height": "500px"},
