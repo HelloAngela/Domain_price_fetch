@@ -1,0 +1,860 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.11586,
+          -33.828064
+        ]
+      },
+      "properties": {
+        "listing.id": 2018145822,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.828064,
+        "listing.propertyDetails.longitude": 151.11586
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.116425,
+          -33.8319054
+        ]
+      },
+      "properties": {
+        "listing.id": 2018125898,
+        "listing.propertyDetails.propertyType": "VacantLand",
+        "listing.propertyDetails.bathrooms": 7.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8319054,
+        "listing.propertyDetails.longitude": 151.116425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.125183,
+          -33.8064651
+        ]
+      },
+      "properties": {
+        "listing.id": 2018150599,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 3,
+        "listing.propertyDetails.latitude": -33.8064651,
+        "listing.propertyDetails.longitude": 151.125183
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.132782,
+          -33.8306236
+        ]
+      },
+      "properties": {
+        "listing.id": 2018148110,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 3,
+        "listing.propertyDetails.latitude": -33.8306236,
+        "listing.propertyDetails.longitude": 151.132782
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.133911,
+          -33.8370476
+        ]
+      },
+      "properties": {
+        "listing.id": 2018145536,
+        "listing.propertyDetails.propertyType": "Townhouse",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.8370476,
+        "listing.propertyDetails.longitude": 151.133911
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.102936,
+          -33.80894
+        ]
+      },
+      "properties": {
+        "listing.id": 2018143218,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.80894,
+        "listing.propertyDetails.longitude": 151.102936
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.115952,
+          -33.8053856
+        ]
+      },
+      "properties": {
+        "listing.id": 2018142443,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8053856,
+        "listing.propertyDetails.longitude": 151.115952
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.105484,
+          -33.7966423
+        ]
+      },
+      "properties": {
+        "listing.id": 2018137918,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.7966423,
+        "listing.propertyDetails.longitude": 151.105484
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.129257,
+          -33.8246269
+        ]
+      },
+      "properties": {
+        "listing.id": 2018137312,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 3,
+        "listing.propertyDetails.latitude": -33.8246269,
+        "listing.propertyDetails.longitude": 151.129257
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.122726,
+          -33.8215141
+        ]
+      },
+      "properties": {
+        "listing.id": 2018132870,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 4.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8215141,
+        "listing.propertyDetails.longitude": 151.122726
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.119049,
+          -33.8100128
+        ]
+      },
+      "properties": {
+        "listing.id": 2018119210,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 6.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8100128,
+        "listing.propertyDetails.longitude": 151.119049
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.10498,
+          -33.79895
+        ]
+      },
+      "properties": {
+        "listing.id": 2018085610,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.79895,
+        "listing.propertyDetails.longitude": 151.10498
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1318,
+          -33.82512
+        ]
+      },
+      "properties": {
+        "listing.id": 2018131709,
+        "listing.propertyDetails.propertyType": "Townhouse",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.82512,
+        "listing.propertyDetails.longitude": 151.1318
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.102386,
+          -33.8108
+        ]
+      },
+      "properties": {
+        "listing.id": 2018129441,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8108,
+        "listing.propertyDetails.longitude": 151.102386
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.10202,
+          -33.8236542
+        ]
+      },
+      "properties": {
+        "listing.id": 2018129225,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8236542,
+        "listing.propertyDetails.longitude": 151.10202
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.095673,
+          -33.7974663
+        ]
+      },
+      "properties": {
+        "listing.id": 2018128700,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.7974663,
+        "listing.propertyDetails.longitude": 151.095673
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.13179,
+          -33.8240128
+        ]
+      },
+      "properties": {
+        "listing.id": 2018124286,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.8240128,
+        "listing.propertyDetails.longitude": 151.13179
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1384,
+          -33.83944
+        ]
+      },
+      "properties": {
+        "listing.id": 2018119225,
+        "listing.propertyDetails.propertyType": "Townhouse",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.83944,
+        "listing.propertyDetails.longitude": 151.1384
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.11351,
+          -33.8161354
+        ]
+      },
+      "properties": {
+        "listing.id": 2018101903,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 3,
+        "listing.propertyDetails.latitude": -33.8161354,
+        "listing.propertyDetails.longitude": 151.11351
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.122818,
+          -33.8302841
+        ]
+      },
+      "properties": {
+        "listing.id": 2018099794,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8302841,
+        "listing.propertyDetails.longitude": 151.122818
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.109421,
+          -33.7964668
+        ]
+      },
+      "properties": {
+        "listing.id": 2018092511,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.7964668,
+        "listing.propertyDetails.longitude": 151.109421
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.138412,
+          -33.83892
+        ]
+      },
+      "properties": {
+        "listing.id": 2018114224,
+        "listing.propertyDetails.propertyType": "Townhouse",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.83892,
+        "listing.propertyDetails.longitude": 151.138412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1143,
+          -33.8127632
+        ]
+      },
+      "properties": {
+        "listing.id": 2018113619,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.8127632,
+        "listing.propertyDetails.longitude": 151.1143
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.13356,
+          -33.8211479
+        ]
+      },
+      "properties": {
+        "listing.id": 2018110589,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8211479,
+        "listing.propertyDetails.longitude": 151.13356
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.113724,
+          -33.82268
+        ]
+      },
+      "properties": {
+        "listing.id": 2018086062,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.82268,
+        "listing.propertyDetails.longitude": 151.113724
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1119,
+          -33.80799
+        ]
+      },
+      "properties": {
+        "listing.id": 2018050184,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.80799,
+        "listing.propertyDetails.longitude": 151.1119
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.105118,
+          -33.80946
+        ]
+      },
+      "properties": {
+        "listing.id": 2018046377,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.80946,
+        "listing.propertyDetails.longitude": 151.105118
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.10321,
+          -33.8030167
+        ]
+      },
+      "properties": {
+        "listing.id": 2018010601,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.8030167,
+        "listing.propertyDetails.longitude": 151.10321
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.102783,
+          -33.8202248
+        ]
+      },
+      "properties": {
+        "listing.id": 2018023059,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.8202248,
+        "listing.propertyDetails.longitude": 151.102783
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1398,
+          -33.8390427
+        ]
+      },
+      "properties": {
+        "listing.id": 2018019547,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8390427,
+        "listing.propertyDetails.longitude": 151.1398
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.107208,
+          -33.8095665
+        ]
+      },
+      "properties": {
+        "listing.id": 2017920450,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8095665,
+        "listing.propertyDetails.longitude": 151.107208
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.109283,
+          -33.8304443
+        ]
+      },
+      "properties": {
+        "listing.id": 2017375048,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 1,
+        "listing.propertyDetails.latitude": -33.8304443,
+        "listing.propertyDetails.longitude": 151.109283
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1008,
+          -33.8199463
+        ]
+      },
+      "properties": {
+        "listing.id": 2017890894,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8199463,
+        "listing.propertyDetails.longitude": 151.1008
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.095734,
+          -33.7960739
+        ]
+      },
+      "properties": {
+        "listing.id": 2017073390,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.7960739,
+        "listing.propertyDetails.longitude": 151.095734
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.109,
+          -33.8071671
+        ]
+      },
+      "properties": {
+        "listing.id": 2017870775,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.8071671,
+        "listing.propertyDetails.longitude": 151.109
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.096161,
+          -33.79626
+        ]
+      },
+      "properties": {
+        "listing.id": 2018132216,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.79626,
+        "listing.propertyDetails.longitude": 151.096161
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.098709,
+          -33.8117
+        ]
+      },
+      "properties": {
+        "listing.id": 2018112406,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 4.0,
+        "listing.propertyDetails.bedrooms": 6.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.8117,
+        "listing.propertyDetails.longitude": 151.098709
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.129288,
+          -33.8234138
+        ]
+      },
+      "properties": {
+        "listing.id": 2017931749,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 7.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.8234138,
+        "listing.propertyDetails.longitude": 151.129288
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.105453,
+          -33.8206749
+        ]
+      },
+      "properties": {
+        "listing.id": 2018076286,
+        "listing.propertyDetails.propertyType": "ApartmentUnitFlat",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 3.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8206749,
+        "listing.propertyDetails.longitude": 151.105453
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.102478,
+          -33.812542
+        ]
+      },
+      "properties": {
+        "listing.id": 2018061833,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 4,
+        "listing.propertyDetails.latitude": -33.812542,
+        "listing.propertyDetails.longitude": 151.102478
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.1023,
+          -33.8130951
+        ]
+      },
+      "properties": {
+        "listing.id": 2017949966,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 6.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.8130951,
+        "listing.propertyDetails.longitude": 151.1023
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.116409,
+          -33.81178
+        ]
+      },
+      "properties": {
+        "listing.id": 2017949404,
+        "listing.propertyDetails.propertyType": "House",
+        "listing.propertyDetails.bathrooms": 2.0,
+        "listing.propertyDetails.bedrooms": 5.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.81178,
+        "listing.propertyDetails.longitude": 151.116409
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.113724,
+          -33.80178
+        ]
+      },
+      "properties": {
+        "listing.id": 2017413796,
+        "listing.propertyDetails.propertyType": "SemiDetached",
+        "listing.propertyDetails.bathrooms": 4.0,
+        "listing.propertyDetails.bedrooms": 4.0,
+        "listing.propertyDetails.carspaces": 2,
+        "listing.propertyDetails.latitude": -33.80178,
+        "listing.propertyDetails.longitude": 151.113724
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.108017,
+          -33.8166466
+        ]
+      },
+      "properties": {
+        "listing.id": 2018070604,
+        "listing.propertyDetails.propertyType": "ApartmentUnitFlat",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 7.0,
+        "listing.propertyDetails.carspaces": 5,
+        "listing.propertyDetails.latitude": -33.8166466,
+        "listing.propertyDetails.longitude": 151.108017
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          151.108017,
+          -33.8166466
+        ]
+      },
+      "properties": {
+        "listing.id": 2018070527,
+        "listing.propertyDetails.propertyType": "NewApartments",
+        "listing.propertyDetails.bathrooms": 3.0,
+        "listing.propertyDetails.bedrooms": 7.0,
+        "listing.propertyDetails.carspaces": 5,
+        "listing.propertyDetails.latitude": -33.8166466,
+        "listing.propertyDetails.longitude": 151.108017
+      }
+    }
+  ]
+}
