@@ -32,14 +32,14 @@ print(list2)
 # csv_input['property.price'] = pd.Series(list1)
 # csv_input = csv_input.fillna(0)
 
-with open("C:\\Users\\hello\\Dropbox\\Python\\property_list_test.csv") as f:
-    csv_input = pd.read_csv(f)
-    csv_input['property.price'] = pd.Series(list1)
-    csv_input = csv_input.fillna(0)
-    csv_input.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_test.csv", index=False)
+# with open("C:\\Users\\hello\\Dropbox\\Python\\property_list_test.csv") as f:
+#     csv_input = pd.read_csv(f)
+#     csv_input['property.price'] = pd.Series(list1)
+#     csv_input = csv_input.fillna(0)
+#     csv_input.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_test.csv", index=False)
 
 with open("C:\\Users\\hello\\Dropbox\\Python\\property_list_2122_filt.csv") as f2:
     csv_input2 = pd.read_csv(f2)
     csv_input2['property.price'] = pd.Series(list2)
-    csv_input2 = csv_input.fillna(0)
-    csv_input.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_2122_filt.csv", index=False)
+    csv_input2 = csv_input2.fillna(0)
+    csv_input2.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_2122_filt.csv", index=False)
