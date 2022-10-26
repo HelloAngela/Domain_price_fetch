@@ -31,7 +31,7 @@ post_fields = {
                 "state": "NSW",
                 "region": "",
                 "area": "",
-                "suburb": "Marsfield",
+                "suburb": "Eastwood",
                 "postCode": 2122,
                 "includeSurroundingSuburbs": True
             }
@@ -54,4 +54,9 @@ with open("C:\\Users\\hello\\Dropbox\\Python\\property_list.json", 'r') as f:
     data = json.load(f)
 
 df2 = pd.json_normalize(data, max_level=7)
-df2.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_2122.csv")
+
+# replacing . with _ cause pandas doesn't like it
+df2.columns = df2.columns.str.replace('.', '_')
+
+# save to file
+df2.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_261022.csv")

@@ -8,77 +8,64 @@ from dash import html
 import pandas as pd
 import dash_leaflet as dl
 import dash_leaflet.express as dlx
-import csv
 from geojson import Feature, FeatureCollection, Point
 import json
+from csv import DictReader
 
 # Create an instance of the Dash class
 app = dash.Dash(__name__)
 
-# Great mile end coffee shops
+# Example if creating geojson from dict
 # coffee_shops = [
 #    dict(name="In Gamba", lat=-33.828064, lon=151.11586),
 #    dict(name="Cafe Olympico", lat=-33.828064, lon=151.11586),
 #    dict(name="The Standard", lat=-33.828064, lon=151.11586),
 # ]
 
-# csv to dict
-
-with open("C:\\Users\\hello\\Dropbox\\Python\\property_list_2111.csv") as f:
-    property_dict = csv.DictReader(f)
-    for row in property_dict:
-        print(row)
-
-    mapping = dlx.dicts_to_geojson(
-        [{**house, **dict(tooltip=house["listing.id"])} for house in property_dict]
-    )
+# geojson input list of dict
+with open("C:\\Users\\hello\\Dropbox\\Python\\property_list_combined.csv", 'r') as f:
+    dict_reader = DictReader(f)
+    list_of_dict = list(dict_reader)
 
 # Creating a geojson from the input points, check https://dash-leaflet.herokuapp.com/
+# Generate geojson with tooltip
+geo = dlx.dicts_to_geojson([{**price, **dict(tooltip=price['lower_bound']+"-"+ price['upper_bound']+" m"+'<br>'
+                                                     + price['listing.propertyDetails.displayableAddress'] + '<br>'
+                                                     + price['listing.propertyDetails.bedrooms'] + " bed, "
+                                                     + price['listing.propertyDetails.bathrooms'] + " bath" + '<br>',
+                                             lon=price['listing.propertyDetails.longitude'],
+                                             lat=price['listing.propertyDetails.latitude'])} for price in list_of_dict])
 
-mapping = dlx.dicts_to_geojson(
-   [{**house, **dict(tooltip=house["listing.id"])} for house in property_dict]
-)
 
-# load geojson into the app
-
+# load geojson file straight into the app
 # with open("C:\\Users\\hello\\Dropbox\\Python\\property_map.json") as data:
 #     geo = json.load(data)
 
 # Putting the map in our app layout
-app.layout = dl.Map(
-   [dl.TileLayer(), dl.GeoJSON(data=mapping,
-                               id="geojson",
-                               zoomToBounds=True)],
-   style={"width": "1000px", "height": "500px"},
-)
-
-
-
-
-
-# Data for dashboard
-# data = pd.read_csv("avocado.csv")
-# data = data.query("type == 'conventional' and region == 'Albany'")
-# data["Date"] = pd.to_datetime(data["Date"], format="%Y-%m-%d")
-# data.sort_values("Date", inplace=True)
-
-
-# # Defining the layout of the app
-# app.layout = html.Div(  # Dash HTML components
-#     children=[
-#         html.H1(children="Data visualisation",),     # H1 - heading
-#         html.P(     # P - Paragraph
-#             children="Properties that matches our search terms",
-#         ),
-#         dl.Map(
-#             [dl.TileLayer(), dl.GeoJSON(data="C:\\Users\\hello\\Dropbox\\Python\\property_map.json",
-#                                         id="geojson",
-#                                         zoomToBounds=True)],
-#             style={"width": "1000px", "height": "500px"},
-#         ),
-#
-#      ]
+# app.layout = dl.Map(
+#    [dl.TileLayer(), dl.GeoJSON(data=mapping,
+#                                id="geojson",
+#                                zoomToBounds=True)],
+#    style={"width": "1000px", "height": "500px"},
 # )
+
+
+# Defining the layout of the app
+app.layout = html.Div(  # Dash HTML components
+    children=[
+        html.H1(children="Property price guide",),     # H1 - heading
+        html.P(     # P - Paragraph
+            children="For properties that matches our search terms",
+        ),
+        dl.Map(
+            [dl.TileLayer(), dl.GeoJSON(data=geo,
+                                        id="geojson",
+                                        zoomToBounds=True)],
+            style={"width": "1000px", "height": "500px"},
+        ),
+
+     ]
+)
 
 if __name__ == "__main__":          # make it possible to run Dash application locally using Flask’s built-in server
     app.run_server(debug=True)      # enables the hot-reloading option in app

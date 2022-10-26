@@ -7,8 +7,11 @@ import time
 import pandas as pd
 from os.path import abspath
 
-# Define guess price function
+# creating list for upper and lower price range
+upper_l = []
+lower_l = []
 
+# Define guess price function
 
 def guess_price(i):
     # Search parameters, property ID available from end of domain URL.
@@ -19,14 +22,22 @@ def guess_price(i):
     starting_min_price = 0
 
     # POST request to receive token. Required: client_id and client_secret
+    # client_95192f1059f951a8eb2c3e9a9d1161ec
+    # secret_ce1de517c47c4fd80ac0658ae986ab3f
+    # client_10873b37e3a0218aa7f1c4fb779684bd
+    # secret_bd3af3a039426e1cdfca319c032218ab
+    # client_ebfa37bc599d11e0405c1c9cfaa925c6
+    # secret_3d310ee2180c109dc66d882ecc0cb488
 
     response = requests.post('https://auth.domain.com.au/v1/connect/token',
-                             data={'client_id': 'client_10873b37e3a0218aa7f1c4fb779684bd',
-                                   "client_secret": "secret_bd3af3a039426e1cdfca319c032218ab",
+                             data={'client_id': 'client_ebfa37bc599d11e0405c1c9cfaa925c6',
+                                   "client_secret": "secret_3d310ee2180c109dc66d882ecc0cb488",
                                    "grant_type": "client_credentials", "scope": "api_listings_read",
                                    "Content-Type": "text/json"})
     token = response.json()
     access_token = token["access_token"]
+
+
 
     # GET Request for ID, make a GET request to the listings endpoint to retrieve listing info based on property ID.
     url = "https://api.domain.com.au/v1/listings/" + property_id
@@ -93,7 +104,6 @@ def guess_price(i):
         listings = []
         for listing in l:
             listings.append(listing["listing"]["id"])
-        listings
 
         if int(property_id) in listings:
             max_price = max_price - increment
@@ -157,11 +167,15 @@ def guess_price(i):
     if max_price < 1000000:
         lower = max_price / 1000
         upper = min_price / 1000
-        denom = "k"
+        # denom = "k"
     else:
         lower = max_price / 1000000
         upper = min_price / 1000000
-        denom = "m"
+        # denom = "m"
+
+        upper_l.append(upper)
+        lower_l.append(lower)
+
 
     # Print results
 
@@ -178,27 +192,31 @@ def guess_price(i):
 
     # Output results to txt
 
-    with open("C:\\Users\\hello\\Dropbox\\Python\\price_2111.txt", 'a') as f:
-        f1 = da['displayAddress']
-        f2 = '\n' + r['headline']
-        f3 = '\n' +"Property Type:" + property_type_str
-        f4 = '\n' +"Details: " + str(int(bedrooms)) + " bedroom," + str(int(bathrooms)) + " bathroom," + str(int(carspaces)) + " carspace"
-        f5 = '\n' +"Display price:" + r['priceDetails']['displayPrice']
-        if max_price == min_price:
-             f6 = '\n' + "Price guide:"+ "$"+ str(lower)+ denom
-        else:
-             f6 = '\n' + "Price range:"+ "$"+ str(lower)+ "-"+ "$"+ str(upper)+ denom
-        f7 = '\n' + "URL:" + r['seoUrl']
-        f.writelines([f1, f2, f3, f4, f5, f6, f7])
-
-
+    # with open("C:\\Users\\hello\\Dropbox\\Python\\price_2111.txt", 'a') as f:
+    #     f1 = da['displayAddress']
+    #     f2 = '\n' + r['headline']
+    #     f3 = '\n' +"Property Type:" + property_type_str
+    #     f4 = '\n' +"Details: " + str(int(bedrooms)) + " bedroom," + str(int(bathrooms)) + " bathroom," + str(int(carspaces)) + " carspace"
+    #     f5 = '\n' +"Display price:" + r['priceDetails']['displayPrice']
+    #     if max_price == min_price:
+    #          f6 = '\n' + "Price guide:"+ "$"+ str(lower)+ denom
+    #     else:
+    #          f6 = '\n' + "Price range:"+ "$"+ str(lower)+ "-"+ "$"+ str(upper)+ denom
+    #     f7 = '\n' + "URL:" + r['seoUrl']
+    #     f.writelines([f1, f2, f3, f4, f5, f6, f7])
+    #
 # Get ID list from csv
 
-df1 = pd.read_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_2122_filt.csv")
-ID_list = list(df1['listing.id'])
+
+df1 = pd.read_csv("C:\\Users\\hello\\Dropbox\\Python\\short_test.csv")
+ID_list = list(df1['listing_id'])
 
 for i in ID_list:
     property_id = str(i)
     guess_price(property_id)
 
+# adding the newly generated price list to dataframe, and save as csv
+df1['upper_bound'] = upper_l
+df1['lower_bound'] = lower_l
+df1.to_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_261022_parsed.csv", index=False)
 
