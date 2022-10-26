@@ -13,6 +13,7 @@ lower_l = []
 
 # Define guess price function
 
+
 def guess_price(i):
     # Search parameters, property ID available from end of domain URL.
     # Set starting lower bound (starting_max_price), starting min price is lower bound plus 400k.
