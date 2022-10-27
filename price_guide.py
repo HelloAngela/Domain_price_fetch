@@ -31,8 +31,8 @@ def guess_price(i):
     # secret_3d310ee2180c109dc66d882ecc0cb488
 
     response = requests.post('https://auth.domain.com.au/v1/connect/token',
-                             data={'client_id': 'client_ebfa37bc599d11e0405c1c9cfaa925c6',
-                                   "client_secret": "secret_3d310ee2180c109dc66d882ecc0cb488",
+                             data={'client_id': 'client_95192f1059f951a8eb2c3e9a9d1161ec',
+                                   "client_secret": "secret_ce1de517c47c4fd80ac0658ae986ab3f",
                                    "grant_type": "client_credentials", "scope": "api_listings_read",
                                    "Content-Type": "text/json"})
     token = response.json()
@@ -47,7 +47,6 @@ def guess_price(i):
     r = request.json()
 
     # Extract property details
-
     da = r['addressParts']
     postcode = da['postcode']
     suburb = da['suburb']
@@ -69,7 +68,6 @@ def guess_price(i):
     # Looping through a series of POST requests starting with starting_max_price plus increment until we have a hit.
     # If hit, then check if property of interest (ID) is in that list.
     # Achieved by using a do while loop.
-
 
     max_price = starting_max_price
     searching_for_price = True
@@ -209,8 +207,8 @@ def guess_price(i):
 # Get ID list from csv
 
 
-df1 = pd.read_csv("C:\\Users\\hello\\Dropbox\\Python\\short_test.csv")
-ID_list = list(df1['listing_id'])
+df1 = pd.read_csv("C:\\Users\\hello\\Dropbox\\Python\\property_list_261022_filt.csv")
+ID_list = list((df1['listing_id']))
 
 for i in ID_list:
     property_id = str(i)
